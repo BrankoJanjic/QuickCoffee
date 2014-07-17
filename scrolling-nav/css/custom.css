@@ -1,0 +1,99 @@
+#welcome {
+	padding-top: 100px;
+	text-align: center;
+}
+
+#afterLoginBody {
+	background: #eee;
+}
+
+#buttonRow {
+
+	padding-top: 100px;
+}
+
+#panel1 {
+	height: 75px;
+}
+
+#panel2 {
+	height: 75px;
+}
+
+#panel3 {
+	height: 75px;
+}
+
+.panel-body {
+
+	/*height: 75px;*/
+	max-width: auto;
+	max-height: auto;
+}
+
+#ceoPanel {
+
+	margin-left: 10px;
+}
+
+#canvasRow {
+
+	padding-top: 100px;
+
+}
+
+#panelKorak {
+
+	font: bold 14px/30px Helvetica,serif;
+}
+
+
+#kontaktTekst {
+	text-align: left;
+	font: italic 16px/30px Helvetica,serif;
+}
+
+
+.btn-primary-dugme {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	margin-top: 15px;
+	width: 150px;
+}
+.btn-primary-dugme:hover,
+.btn-primary-dugme:focus,
+.btn-primary-dugme:active,
+.btn-primary-dugme.active,
+.open .dropdown-toggle.btn-primary-dugme {
+	color: #fff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+.btn-primary-dugme:active,
+.btn-primary-dugme.active,
+.open .dropdown-toggle.btn-primary-dugme {
+	background-image: none;
+}
+.btn-primary-dugme.disabled,
+.btn-primary-dugme[disabled],
+fieldset[disabled] .btn-primary-dugme,
+.btn-primary-dugme.disabled:hover,
+.btn-primary-dugme[disabled]:hover,
+fieldset[disabled] .btn-primary-dugme:hover,
+.btn-primary-dugme.disabled:focus,
+.btn-primary-dugme[disabled]:focus,
+fieldset[disabled] .btn-primary-dugme:focus,
+.btn-primary-dugme.disabled:active,
+.btn-primary-dugme[disabled]:active,
+fieldset[disabled] .btn-primary-dugme:active,
+.btn-primary-dugme.disabled.active,
+.btn-primary-dugme[disabled].active,
+fieldset[disabled] .btn-primary-dugme.active {
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+.btn-primary-dugme .badge {
+	color: #428bca;
+	background-color: #fff;
+}

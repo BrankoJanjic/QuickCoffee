@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Quick coffee</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+</head>
+<body onLoad="onLoad()">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+				<a class="navbar-brand" href="index.html">Quick coffee</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="kreiranjePlana.html">Kreiranje plana</a></li>
+					<li><a href="https://127.0.0.1:8000/admin">Administracija</a></li>
+					<li><a href="afterLogin.html">Meni</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav>
+
+
+	<div class="row" id="canvasRow">
+		<div class="col-md-2">
+			<div class="panel panel-default text-center" id="ceoPanel">
+				<div class="panel-heading" id="panelKorak">
+					<!--Dinamicki ide tekst za korake preko JS-a -->
+				</div>
+				<div class="panel-body" id="panelTekst">
+					<!--Dinamicki ide tekst za korake preko JS-a -->
+				</div>
+			</div>
+		</div>	
+		<div class="col-md-8">
+			<canvas id="fabriccanvas" width="900" height="500" style="border:2px solid #ccc"></canvas>
+		</div>
+		<div class="col-md-2">
+			<button type="button" class="btn btn-primary-dugme" id="zid">Dodaj zid</button>
+			<button type="button" class="btn btn-primary-dugme" id="oslobodi" style="display:none" onClick="preuredi()">Preuredi</button>
+			<button type="button" class="btn btn-primary-dugme" onClick="fiksiraj()" id="fiksiraj">Fiksiraj zidove</button>			
+			<button type="button" class="btn btn-primary-dugme" id="dugme1" style="display:none">Dodaj sto</button>
+			<button type="button" class="btn btn-primary-dugme" id="dugme2" style="display:none">Dodaj sto</button>
+			<button type="button" class="btn btn-primary-dugme" id="kraj" style="display:none">Završi</button>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	function onLoad(){
+		var korak = document.getElementById("panelKorak");
+		korak.innerHTML = "Evidencija";
+		var tekst = document.getElementById("panelTekst");
+		tekst.innerHTML = "Klikom na sto, promenite zauzetost stola."
+
+	}
+	</script>
+</body>
+</html>

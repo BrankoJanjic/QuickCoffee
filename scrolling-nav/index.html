@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quick coffee</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Quick coffee</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Kontakt</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#services">Korisnički deo</a>
+                    </li>
+                   <!-- <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                   <h1> <span class="glyphicon glyphicon-phone"></span> O aplikaciji</h1>
+
+                 <!--   <div class="page-scroll">
+                        <a class="btn btn-default" href="#about">Click me!</a>
+                    </div>
+                    <br>
+                    <!--<p>This demo is the same sort of scrolling navigation menu we use in our <a href="http://startbootstrap.com/grayscale.php">Grayscale theme</a>. Whenever you want to use the page scrolling feature, make sure the link points to an ID (<code>#about</code> for example), and that the parent of the link has the class <code>.page-scroll</code>. See how the button above and the menu bar links are formatted for a working example.</p>-->
+                    <p>Quick coffee je aplikacija koja korisnicima omogućava da jednostavno i brzo pronađu kafić na osnovu lokacije i pogledaju popunjenost kapaciteta. </p>
+                    <ul>
+                        <li>Izbor kafića po opštinama</li>
+                        <li>Kafići u radiusu od 500m u odnosu na trenutnu lokaciju korisnika</li>
+                        <li>Redovno ažuriranje popunjenosti kapaciteta</li>
+                        <li>Izgled enterijera</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                   <img class="img-responsive" src="img/screenshot1.png" alt="screenshot/galerija">
+               </div> 
+
+             <!--<div class="col-lg-6">
+              <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+        </div> -->
+
+    </div>
+
+</div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container" id="aboutContainer">
+      <div class="row">
+        <div id="naslovKontakt">
+            <h1><span class="glyphicon glyphicon-pencil"></span> &nbsp; &nbsp; Kontakt</h1>
+        </div>
+        <br/>
+        <br/>
+        <div class="col-md-2" id="kontaktTekst"> <p>Ukoliko ste zainteresovani da se i Vaš kafić nađe u u našoj aplikaciji pošaljite nam osnovne podatke a mi ćemo Vas kontaktirati.</p></div>
+
+        <div class="col-md-10">
+
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <input type="text" class="form-control" id="inputName" placeholder="Naziv kafića">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+      <!--<div class="form-group">
+        <div class="col-md-offset-2 col-md-8">
+          <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+      </div>
+  </div>-->
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-8">
+      <textarea name="message" class="form-control" rows="3" placeholder="Poruka"></textarea>
+  </div>
+</div>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-8">
+       <button type="button" class="btn btn-theme btn-lg btn-block">Pošaljite poruku</button>
+   </div>
+</div>
+</form>
+
+</div>
+</div>
+</section>
+
+<section id="services" class="services-section">
+    <div class="container" id="servicesContainer">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Korisnički deo</h1>
+                <p>Molimo Vas da se ulogujete kako biste pristupili korisničkom delu.</p>
+                <br/>
+                <div class="page-scroll">
+                    <a href="afterLogin.html" class="btn btn-primary btn-lg active" role="button">Ulogujte se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section>
+    <div class="container">
+        <div class="row" id="linksIndex" style="display:none;">
+            <div class="col-lg-6">
+                <a href="img/screenshot1.png" title="Banana">
+                  <img src="img/screenshot1.png" alt="Banana">
+              </a>
+              <a href="img/screenshot2.jpg" title="Apple">
+                  <img src="img/screenshot2.jpg" alt="Apple">
+              </a>
+              <a href="img/screenshot3.jpg" title="Orange">
+                  <img src="img/screenshot2.jpg" alt="Orange">
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!--  <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script>
+    blueimp.Gallery(
+      document.getElementById('linksIndex').getElementsByTagName('a'),
+      {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+    );
+    </script>
+
+</body>
+
+</html>
